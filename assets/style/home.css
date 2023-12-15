@@ -7,7 +7,7 @@
     margin-inline: auto;
 }
 
-/* ------------------Main style---------------- */
+/* ------------------Header style-------------- */
 /* -------------------------------------------- */
 
 main {
@@ -62,7 +62,7 @@ input {
     color: #2185C5;
 }
 
-.links-2 li + li {
+.links-2 li+li {
     margin-left: 15px;
 }
 
@@ -72,4 +72,106 @@ input {
 
 .links-2 i {
     font-size: 18px;
+}
+
+/* ::placeholder {
+    color: #98a3ba;
+} */
+
+/* ------------------Main style---------------- */
+/* -------------------------------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.my-profile {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.my-profile img {
+    display: inline;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.my-info-1 p:nth-child(3) {
+    color: #727272;
+}
+
+.my-info-1 a {
+    color: #727272;
+    display: flex;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+    margin-top: 10px;
+}
+
+.my-info-1 a:hover {
+    color: #000;
+}
+
+.my-info-1 i {
+    color: #2185C5;
+    line-height: 1.4;
+}
+
+.followers {
+    display: grid;
+    margin: 30px 0px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.followers div {
+    padding: 20px 0px;
+}
+
+.followers div:first-child,
+.followers div:nth-child(2) {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.followers div:nth-child(2) {
+    border-left: 1px solid #d8d8d8;
+}
+
+.followers h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.followers p {
+    font-size: 14px;
+    color: #727272;
+}
+
+.my-profile > p {
+    /* padding: 0px 2px; */
+    margin-bottom: 10px;
+}
+
+.my-profile > button {
+    padding: 15px 30px;
+    background-color: #2185C5;
+    color: #fff;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.my-profile > button:hover {
+    background-color: #1e7ab4;
 }
