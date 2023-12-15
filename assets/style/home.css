@@ -90,7 +90,7 @@ header input {
     text-align: center;
     padding: 30px 0px;
     border-radius: 6px;
-    width: 300px;
+    /* width: 300px; */
     height: 530.8px;
 }
 
@@ -279,4 +279,60 @@ header input {
 
 .post-content p {
     margin-bottom: 10px;
+}
+
+/* Third Column */
+
+.suggestions {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0px 20px;
+    height: 900px;
+}
+
+.suggestions h2 {
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 1.05;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.people-container {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-container > div {
+    display: flex;
+    align-items: center;
+}
+
+.people-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.people-container a {
+    margin-right: 10px;
+}
+
+.people-container h3 {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.people-container p {
+    font-size: 13px;
+    color: #727272;
+}
+
+.people-container i {
+    color: #007aff;
+    cursor: pointer;
 }
