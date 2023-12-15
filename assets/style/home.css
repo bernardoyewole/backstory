@@ -31,20 +31,20 @@ nav ul {
 }
 
 .heading a {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     margin-right: 40px;
-    color: #2185C5;
+    color: #007aff;
 }
 
-input {
-    background: url(../img/search-13-16.png) no-repeat;
-    background-position: 20px;
+header input {
+    background: url(../img/search-12.png) no-repeat;
+    background-position: 15px;
     background-color: #eaedf1;
     height: 40px;
     width: 350px;
     border-radius: 30px;
-    padding: 0px 20px 0px 50px;
+    padding: 0px 20px 0px 42px;
 }
 
 .links-2 li {
@@ -59,7 +59,7 @@ input {
 
 .links-2 a {
     display: block;
-    color: #2185C5;
+    color: #007aff;
 }
 
 .links-2 li+li {
@@ -74,19 +74,17 @@ input {
     font-size: 18px;
 }
 
-/* ::placeholder {
-    color: #98a3ba;
-} */
-
 /* ------------------Main style---------------- */
 /* -------------------------------------------- */
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 10px;
+    gap: 20px;
     padding-top: 50px;
 }
+
+/* First column */
 
 .my-profile {
     background-color: #fff;
@@ -124,8 +122,8 @@ input {
 }
 
 .my-info-1 i {
-    color: #2185C5;
-    line-height: 1.4;
+    color: #007aff;
+    line-height: 1.5;
 }
 
 .followers {
@@ -159,13 +157,13 @@ input {
 }
 
 .my-profile > p {
-    /* padding: 0px 2px; */
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    color: #727272;
 }
 
 .my-profile > button {
     padding: 15px 30px;
-    background-color: #2185C5;
+    background-color: #007aff;
     color: #fff;
     border-radius: 28px;
     cursor: pointer;
@@ -173,5 +171,71 @@ input {
 }
 
 .my-profile > button:hover {
-    background-color: #1e7ab4;
+    background-color: #248eff;
+}
+
+/* Second column */
+
+/* .posts {
+    text-align: center;
+} */
+
+.post-here {
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.post-here :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-container i {
+    color: #007aff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.post-here input {
+    width: 90%;
+    padding: 20px 0px;
+    line-height: 1;
+}
+
+.line-break {
+    border-top: 1px solid #d8d8d8;
+    margin-bottom: 20px;
+}
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-options div:not(.line-break) {
+    display: flex;
+    align-items: center;
+}
+
+.post-options i {
+    margin-right: 6px;
+    font-size: 24px;
+}
+
+.post-options p {
+    color: #505050;
+}
+
+.live-video i {
+    color: #f02849;
+}
+
+.photo i {
+    color: #45bd62;
+}
+
+.feeling {
+    color: #fab921;
 }
