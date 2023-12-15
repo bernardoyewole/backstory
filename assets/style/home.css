@@ -3,15 +3,14 @@
 @import url(./reset.css);
 
 .container {
-    width: min(100% - 30px, 1080px);
+    width: min(100% - 30px, 1280px);
     margin-inline: auto;
 }
 
-/* ------------------Header style-------------- */
-/* -------------------------------------------- */
+/* ---------------Header style-------------- */
+/* ----------------------------------------- */
 
 main {
-    height: 100%;
     background-color: #eaedf1;
 }
 
@@ -92,6 +91,7 @@ header input {
     padding: 30px 0px;
     border-radius: 6px;
     width: 300px;
+    height: 530.8px;
 }
 
 .my-profile img {
@@ -118,7 +118,7 @@ header input {
 }
 
 .my-info-1 a:hover {
-    color: #000;
+    color: #2a2a2a;
 }
 
 .my-info-1 i {
@@ -156,12 +156,12 @@ header input {
     color: #727272;
 }
 
-.my-profile > p {
+.my-profile>p {
     margin-bottom: 16px;
     color: #727272;
 }
 
-.my-profile > button {
+.my-profile>button {
     padding: 15px 30px;
     background-color: #007aff;
     color: #fff;
@@ -170,20 +170,18 @@ header input {
     transition: all 0.25s ease-in-out;
 }
 
-.my-profile > button:hover {
+.my-profile>button:hover {
     background-color: #248eff;
 }
 
 /* Second column */
 
-/* .posts {
-    text-align: center;
-} */
-
-.post-here {
+.post-here,
+.friends-post {
     padding: 0px 20px 20px 20px;
     background-color: #fff;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 .post-here :first-child {
@@ -198,8 +196,14 @@ header input {
     cursor: pointer;
 }
 
+.post-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
 .post-here input {
-    width: 90%;
+    width: 80%;
     padding: 20px 0px;
     line-height: 1;
 }
@@ -212,6 +216,10 @@ header input {
 .post-options {
     display: flex;
     justify-content: space-between;
+}
+
+.post-options div {
+    cursor: pointer;
 }
 
 .post-options div:not(.line-break) {
@@ -238,4 +246,37 @@ header input {
 
 .feeling {
     color: #fab921;
+}
+
+.post-heading img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.post-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.heading-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-heading p,
+.post-heading i {
+    color: #727272;
+}
+
+.post-heading h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.post-content p {
+    margin-bottom: 10px;
 }
