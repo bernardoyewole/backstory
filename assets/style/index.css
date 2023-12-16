@@ -25,16 +25,8 @@ h1 {
     margin-left: 80px;
 }
 
-/* h1 img {
-    position: absolute;
-    top: 30px;
-    left: 68px;
-    height: 70px;
-    width: 70px;
-} */
-
 .login-section {
-    width: 40%;
+    width: 50%;
     height: 100dvh;
     display: flex;
     justify-content: center;
