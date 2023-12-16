@@ -2,12 +2,12 @@
 
 import { onEvent, select, selectAll, create, print } from "./utils.js";
 
-const userImage = selectAll('.people-container img');
+const userImages = selectAll('.people-container img');
 const usernames = selectAll('.people-container h3');
 const cities = selectAll('.people-container p');
 
 function setUserImages(arr) {
-    userImage.forEach((img, index) => {
+    userImages.forEach((img, index) => {
         img.setAttribute('src', `${arr[index].picture.medium}`)
     });
 }
@@ -24,7 +24,7 @@ function setCities(arr) {
     });
 }
 
-function appendUsers(arr) {
+function setUsers(arr) {
     setUserImages(arr);
     setUsernames(arr);
     setCities(arr);
@@ -47,8 +47,7 @@ async function getUsers() {
 
         const users = await result.json();
         const list = users.results;
-        console.log(list);
-        appendUsers(list);
+        setUsers(list);
     } catch (error) {
         console.log(error.message);
     }
