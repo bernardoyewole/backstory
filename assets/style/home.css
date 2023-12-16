@@ -80,7 +80,7 @@ header input {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 /* First column */
@@ -90,7 +90,6 @@ header input {
     text-align: center;
     padding: 30px 0px;
     border-radius: 6px;
-    /* width: 300px; */
     height: 530.8px;
 }
 
@@ -161,7 +160,7 @@ header input {
     color: #727272;
 }
 
-.my-profile>button {
+.my-profile > button {
     padding: 15px 30px;
     background-color: #007aff;
     color: #fff;
@@ -176,9 +175,9 @@ header input {
 
 /* Second column */
 
-.post-here,
-.friends-post {
-    padding: 0px 20px 20px 20px;
+.friends-post,
+.post-here {
+    padding: 20px;
     background-color: #fff;
     border-radius: 6px;
     margin-bottom: 20px;
@@ -188,6 +187,10 @@ header input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.post-container {
+    padding-bottom: 10px;
 }
 
 .post-container i {
@@ -204,7 +207,6 @@ header input {
 
 .post-here input {
     width: 80%;
-    padding: 20px 0px;
     line-height: 1;
 }
 
@@ -258,7 +260,7 @@ header input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    margin-bottom: 15px;
 }
 
 .heading-profile {
@@ -278,7 +280,28 @@ header input {
 }
 
 .post-content p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.post-content div {
+    margin-top: 15px;
+}
+
+.post-content a {
+    color: #727272;
+    transition: all 0.25s ease-in-out;
+}
+
+.post-content a:hover {
+    color: #2a2a2a;
+}
+
+.post-content a + a {
+    margin-left: 20px;
+}
+
+.post-content i {
+    margin-right: 2px;
 }
 
 /* Third Column */
@@ -287,7 +310,7 @@ header input {
     background-color: #fff;
     border-radius: 6px;
     padding: 0px 20px;
-    height: 900px;
+    height: 675px;
 }
 
 .suggestions h2 {
@@ -295,7 +318,7 @@ header input {
     padding: 20px 0px;
     line-height: 1.05;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid #d8d8d8;
 }
 
@@ -322,17 +345,46 @@ header input {
 }
 
 .people-container h3 {
-    font-size: 18px;
-    font-weight: 600;
     cursor: pointer;
 }
 
 .people-container p {
-    font-size: 13px;
+    font-size: 12px;
     color: #727272;
 }
 
 .people-container i {
     color: #007aff;
     cursor: pointer;
+}
+
+/* ------------------Main style---------------- */
+/* -------------------------------------------- */
+
+footer nav {
+    padding: 60px 0px 30px 0px;
+    background-color: #eaedf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer nav li + li {
+    margin-left: 20px;
+}
+
+footer ul {
+    margin-bottom: 20px;
+}
+
+footer nav a,
+footer nav p {
+    color: #727272;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer nav a:hover {
+    color: #2a2a2a;
 }
