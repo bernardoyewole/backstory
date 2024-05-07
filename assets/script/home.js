@@ -36,6 +36,7 @@ const options = {
 };
 
 async function getUsers() {
+    let randomSeed = Math.random().toString(36).substring(7); // Generate a random string
     const URL = '`https://randomuser.me/api/?nat=CA&results=10&seed=${randomSeed}`';
 
     try {
