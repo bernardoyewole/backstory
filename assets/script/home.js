@@ -36,7 +36,7 @@ const options = {
 };
 
 async function getUsers() {
-    const URL = 'https://randomuser.me/api/?nat=CA&results=10&seed=same';
+    const URL = '`https://randomuser.me/api/?nat=CA&results=10&seed=${randomSeed}`';
 
     try {
         const result = await fetch(URL, options);
